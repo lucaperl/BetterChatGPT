@@ -9,7 +9,7 @@ import { ChatInterface } from '@type/chat';
 import PopupModal from '@components/PopupModal';
 import TokenCount from '@components/TokenCount';
 import CommandPrompt from '../CommandPrompt';
-
+import PendingMessageTokenCount from '@components/PromptInputTokenCount';
 const EditView = ({
   content,
   setIsEdit,
@@ -121,6 +121,7 @@ const EditView = ({
 
   return (
     <>
+      <PendingMessageTokenCount content={_content} role={inputRole} />
       <div
         className={`w-full ${
           sticky
