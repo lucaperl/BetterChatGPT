@@ -22,6 +22,7 @@
     "directories": {
       "output": "release"
     },
+    "publish": "always", 
     "dmg": {
       "title": "${productName} ${version}",
       "icon": "dist/icon-rounded-macos.png"
