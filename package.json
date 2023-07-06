@@ -22,7 +22,10 @@
     "directories": {
       "output": "release"
     },
-    "publish": "always", 
+    "publish": {
+      "provider": "github",
+      "releaseType": "draft"
+    }
     "dmg": {
       "title": "${productName} ${version}",
       "icon": "dist/icon-rounded-macos.png"
