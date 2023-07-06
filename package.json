@@ -1,7 +1,7 @@
 {
   "name": "better-chatgpt",
   "private": true,
-  "version": "LPv01",
+  "version": "1.0.4-lp01",
   "type": "module",
   "homepage": "./",
   "main": "electron/index.cjs",
