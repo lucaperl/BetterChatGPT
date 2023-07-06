@@ -24,7 +24,7 @@ jobs:
         run: yarn
 
       - name: Build
-        run: yarn make
+        run: yarn build && electron-builder --publish always
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VITE_GOOGLE_CLIENT_ID: ${{ secrets.GCLIENT }}
